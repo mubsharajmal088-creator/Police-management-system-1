@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-police-50: #eff6ff;
+  --color-police-100: #dbeafe;
+  --color-police-200: #bfdbfe;
+  --color-police-300: #93c5fd;
+  --color-police-400: #60a5fa;
+  --color-police-500: #3b82f6;
+  --color-police-600: #2563eb;
+  --color-police-700: #1d4ed8;
+  --color-police-800: #1e40af;
+  --color-police-900: #1e3a8a;
+  --color-police-950: #172554;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
